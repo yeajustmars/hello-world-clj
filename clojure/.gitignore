@@ -1,0 +1,9 @@
+.swp
+.swo
+.cpcache
+.DS_Store
+.rebel_readline_history
+**.\!*\!*
+**/target/
+**.DS_Store
+**.dylib

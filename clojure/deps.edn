@@ -1,0 +1,23 @@
+{:paths ["src" "resources"]
+
+ :deps {com.fzakaria/slf4j-timbre {:mvn/version "0.3.21"}
+        org.clojure/clojure {:mvn/version "1.12.0"}}
+
+ :aliases
+ {:repl {:__usage__ "clojure -M:repl"
+         :extra-paths ["dev/script"
+                       "dev/src"
+                       "test"]
+         :extra-deps {cider/cider-nrepl {:mvn/version "0.28.5"}
+                      com.bhauman/rebel-readline #:mvn{:version "0.1.4"}
+                      mvxcvi/puget {:mvn/version "1.3.4"}
+                      nrepl/nrepl {:mvn/version "1.0.0"}
+                      org.clojure/tools.namespace #:mvn{:version "1.2.0"}}
+         :main-opts ["-m" "repl"]}
+
+  :test/kaocha {:__usage__ "clj -M:test"
+                :extra-deps {babashka/fs {:mvn/version "0.2.12"}
+                             com.taoensso/carmine {:mvn/version "3.3.2"}
+                             lambdaisland/kaocha {:mvn/version "1.91.1392"}
+                             org.clojure/core.async {:mvn/version "1.6.681"}}
+                :main-opts ["-m" "kaocha.runner"]}}}
