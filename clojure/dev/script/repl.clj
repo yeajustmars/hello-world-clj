@@ -6,8 +6,6 @@
     [user :as user]))
 
 (defn -main []
-  (user/logo)
-  (user/print-init-msg)
   (nrepl-server/start-server :port {{repl_port}} :handler cider-nrepl-handler)
   (rebel/-main)
   (System/exit 0))
