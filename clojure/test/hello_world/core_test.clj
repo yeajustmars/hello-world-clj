@@ -9,5 +9,5 @@
 
 (deftest greet
   (testing "hello-world.core/greet"
-    (let [expected "Hello, world!"]
+    (let [expected "Hello, World!"]
       (is (= expected (core/greet "World"))))))
