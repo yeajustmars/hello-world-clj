@@ -9,7 +9,7 @@ This project was created with the following variables:
 
 | Boilermaker Var | Value         |
 |-----------------|---------------|
-| `recipient`     | {{recipient}} |
+| `recipient`     | "{{recipient}}" |
 | `repl_port`     | {{repl_port}} |
 
 # Usage
